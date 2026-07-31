@@ -60,6 +60,9 @@ models:
     columns:
       - name: price
         data_tests:
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              arguments:
+                column_type: number
           - dbt_expectations.expect_column_quantile_values_to_be_between:
               arguments:
                 quantile: .99
