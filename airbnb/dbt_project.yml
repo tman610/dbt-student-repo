@@ -52,3 +52,7 @@ models:
 data_tests:
   +store_failures: true
   +schema: _test_failures
+
+snapshots:
+  airbnb:
+    +schema: snapshots
